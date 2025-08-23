@@ -1,0 +1,83 @@
+.contact-section {
+  background: #23273a;
+  border: 2px solid #bb86fc;
+  border-radius: 22px;
+  margin: 48px auto 0 auto;
+  padding: 2.5rem 2rem;
+  max-width: 1000px;
+  box-shadow: 0 4px 32px rgba(187,134,252,0.1);
+}
+
+.contact-heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2.6rem;
+  letter-spacing: 1.2px;
+  color: #fff;
+}
+
+.heading-white {
+  color: #fff;
+}
+
+.heading-purple {
+  color: #bb86fc;
+}
+
+/* Subheading / script font */
+.contact-subtitle {
+  font-family: 'Dancing Script', cursive;
+  color: #bb86fc;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #23273a;
+  color: #fff;
+  border: 2px solid #bb86fc;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 18px;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #478dff;  /* blue highlight on focus, optional */
+  outline: none;
+}
+
+.contact-form button[type='submit'] {
+  background: #bb86fc;
+  color: #23273a;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1em;
+  padding: 11px 0;
+  margin-top: 0.6rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-form button[type='submit']:hover {
+  background: #478dff;
+  color: #fff;
+}
+
+.contact-info {
+  color: #fff;
+}
+
+.contact-info-item svg {
+  color: #bb86fc;
+  font-size: 1.4em;
+  margin-right: 0.4em;
+}
