@@ -1,70 +1,77 @@
-.about-heading {
-  font-size: 2.8rem;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 2.6rem;
-  letter-spacing: 1.2px;
-  color: #fff;
-}
-
-.heading-white {
-  color: #fff;
-}
-
-.heading-purple {
-  color: #bb86fc;
-}
-
 .about-section {
-  background: #23273a;
-  border: 2px solid #bb86fc;
-  border-radius: 22px;
-  margin: 48px auto;
-  padding: 2.5rem 2rem;
-  box-shadow: 0 4px 32px rgba(187,134,252,0.12);
-  max-width: 1000px;
+  padding: 2.5rem 3rem;
+  max-width: 720px;
+  margin: 2rem auto;
+  background-color: #1c1c1c; /* Dark charcoal */
+  border-radius: 1.2rem;
+  border: 2px solid #ff6f3c; /* Fiery orange */
+  box-shadow: 0 0 20px #ff6f3c88;
+  color: #fff8e7; /* Soft cream */
+}
+
+.about-section h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #ff6f3c; /* Fiery Orange for the title */
+}
+
+.colored-title {
+  color: #ff6f3c;
+}
+
+.about-cards {
   display: flex;
-  align-items: flex-start;
-  gap: 2.5rem;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
-/* Profile image style */
-.about-imgbox {
-  flex: 0 0 260px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.about-card {
+  background-color: #222229;
+  padding: 1.5rem 1.8rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 12px #ffd56bb3;
 }
 
-.about-img {
-  width: 260px;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 18px;
-  box-shadow: 0 8px 32px #bb86fc22;
-}
-
-/* About text content */
-.about-content {
-  flex: 2 1 300px;
-  color: #e0e6eb;
-}
-
-/* Optional: subheading in script font */
-.about-subtitle {
-  font-family: 'Dancing Script', cursive;
-  color: #bb86fc;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
-  text-align: left;
-  font-style: italic;
+.about-card h3 {
+  font-size: 1.5rem;
   font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ff6f3c;
 }
-.about-text {
+
+.about-card p,
+.about-card ul {
   font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.2rem;
-  text-align: left;
-  color: #cfd8e3;
+  line-height: 1.5;
+  list-style-position: inside;
+  color: #fff8e7;
+  margin: 0;
+}
+
+.about-card ul {
+  padding-left: 1rem;
+}
+
+.about-card ul li {
+  margin-bottom: 0.4rem;
+  list-style-type: disc;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 1.5rem 1.8rem;
+  }
+  .about-cards {
+    gap: 1rem;
+  }
+  .about-card h3 {
+    font-size: 1.3rem;
+  }
+  .about-card p,
+  .about-card ul {
+    font-size: 1rem;
+  }
 }

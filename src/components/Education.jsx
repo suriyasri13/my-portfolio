@@ -1,41 +1,28 @@
-import React from 'react';
-import './Education.css';
-
-const educationData = [
-  {
-    label: "SSLC",
-    value: "GRACE Matriculation Higher Secondary School, Chennai",
-    detail: "SCORED 80%",
-    year: "2020–2021",
-  },
-  {
-    label: "HSC",
-    value: "GRACE Matriculation Higher Secondary School, Chennai",
-    detail: "SCORED 82%",
-    year: "2021–2022",
-  },
-  {
-    label: "BE CSE",
-    value: "Meenakshi College of Engineering, Anna University",
-    detail: "Computer Science & Engineering, CGPA: 8.1/10 (Expected May 2026).",
-    year: "2022–2026",
-  }
-];
+import React from "react";
+import "./Education.css";
 
 const Education = () => (
-  <section id="education" className="info-card-section">
+  <section className="education-section" id="education">
     <h2>
-      My <span className="highlight">Education</span>
+      <span className="pretitles">My</span>
+      <span className="colored-title"> Education</span>
     </h2>
-    <div className="info-card-list">
-      {educationData.map((edu, idx) => (
-        <div className="info-card" key={idx}>
-          <h3 className="info-label">{edu.label}</h3>
-          <span className="info-value">{edu.value}</span>
-          <p className="info-detail">{edu.detail}</p>
-          <span className="info-year">{edu.year}</span>
-        </div>
-      ))}
+    <div className="education-cards">
+      <div className="education-card">
+        <h3>B.E. Computer Science and Engineering</h3>
+        <p>Meenakshi College of Engineering, Anna University</p>
+        <p>Expected Graduation: May 2026 | CGPA: 8.1 / 10</p>
+      </div>
+      <div className="education-card">
+        <h3>Higher Secondary (HSC)</h3>
+        <p>Sethu Bhaskara Matriculation Higher Secondary School, Chennai</p>
+        <p>Major: Computer Science, Mathematics | 12th – 81%</p>
+      </div>
+      <div className="education-card">
+        <h3>Secondary (SSLC)</h3>
+        <p>Sethu Bhaskara Matriculation Higher Secondary School, Chennai</p>
+        <p>10th – 50%</p>
+      </div>
     </div>
   </section>
 );

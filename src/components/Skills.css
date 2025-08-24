@@ -1,39 +1,53 @@
-.skill-card {
-  background: #23273a;
-  border: 2px solid #9162ff;     /* Blue border, same as certifications */
-  border-radius: 18px;
-  box-shadow: 0 4px 40px rgba(71, 141, 255, 0.10);
-  padding: 1.5rem 1rem 1.2rem 1rem;
-  margin-bottom: 1.5rem;
-  transition: box-shadow 0.2s, transform 0.15s, border-color 0.18s;
-  text-align: left;
-  min-width: 220px;
+.skills-section {
+  padding: 3rem 4rem;
+  background-color: #1C1C1C;     /* Dark Charcoal background */
+  border-radius: 1.5rem;
+  border: 2px solid #FF6F3C;     /* Fiery Orange border */
+  box-shadow: 0 2px 8px rgba(255, 111, 60, 0.15);
+  text-align: center;
+  color: #FFF8E7;                /* Soft Cream text */
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skills-section h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #FF6F3C;                /* Fiery Orange heading */
+}
+
+.skills-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.8rem 2rem;
+  justify-content: center;
 }
 
-/* Hover effect */
-.skill-card:hover {
-  border-color: #9e6aff; /* Optional: or use a lighter blue, or keep #478dff for both */
-  box-shadow: 0 12px 40px rgba(71, 141, 255, 0.22);
-  transform: translateY(-6px) scale(1.03);
-  z-index: 1;
+.skill-icon-card {
+  background-color: #222229;     /* Slightly lighter charcoal for cards */
+  border-radius: 1rem;
+  box-shadow: 0 0 12px #FFD56B;  /* Warm yellow soft glow */
+  border: 2px solid transparent;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-}
-.skills-heading {
-  font-size: 2.8rem;
-  font-weight: 800;
-  text-align: center;    /* Center align the heading */
-  margin-bottom: 2.6rem;
-  letter-spacing: 1.2px;
-  color: #fff;           /* Default color, overridden by spans */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
 }
 
-.heading-white {
-  color: #fff;
+.skill-icon-card:hover {
+  border-color: #FF6F3C;         /* Fiery Orange border on hover */
+  box-shadow: 0 0 32px #FF6F3C, 0 0 42px #FFD56B;
+  transform: translateY(-6px);
 }
 
-.heading-purple {
-  color: #bb86fc;
+.skill-single-icon {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
 }
